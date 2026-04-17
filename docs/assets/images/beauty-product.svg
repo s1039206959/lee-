@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="美妆产品占位图">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#34203c"/><stop offset="100%" stop-color="#121526"/></linearGradient></defs>
+  <rect width="1280" height="720" fill="url(#g)"/>
+  <g fill="none" stroke="#d6c39a" stroke-width="3" opacity=".58">
+    <ellipse cx="350" cy="370" rx="130" ry="220"/>
+    <rect x="520" y="190" width="150" height="360" rx="75"/>
+    <rect x="720" y="160" width="320" height="420" rx="22"/>
+  </g>
+  <text x="640" y="640" fill="#f0ebf5" font-size="40" text-anchor="middle" font-family="Inter,Arial,sans-serif">美妆产品 · Beauty Product</text>
+</svg>
