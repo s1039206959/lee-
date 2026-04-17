@@ -43,43 +43,11 @@ python -m http.server 8080 --directory docs
 
 ### 方式二
 将 `docs/` 目录内容发布到 `gh-pages` 分支根目录。
-
----
-
-## 4. 表单服务接入（静态站可用）
-本项目已集成 **Formspree** 前端提交方案（不需要后端，不暴露密码/API Key）。
-
-### 你需要做什么
-1. 注册 Formspree：<https://formspree.io/>
-2. 创建一个新表单（目标收件邮箱填写：`ss1039206959@gmail.com`）。
-3. 获取 Form Endpoint（格式类似：`https://formspree.io/f/xxxxabcd`）。
-4. 打开 `docs/index.html`，找到联系表单 `action` 这一行并替换：
-   - 当前占位：`https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID`
-   - 替换为你的真实 endpoint。
-
-### 表单成功/失败反馈
-- 提交成功：页面会提示“提交成功！我们已收到您的咨询信息...”
-- 提交失败：页面会提示失败原因并建议直接发邮件到 `ss1039206959@gmail.com`
-
-### 如何测试是否成功发到邮箱
-1. 完成 endpoint 替换后，本地运行：
-   ```bash
-   python -m http.server 8080 --directory docs
-   ```
-2. 访问 `http://localhost:8080`，填写表单并提交。
-3. 页面出现“提交成功”提示后，检查 `ss1039206959@gmail.com` 收件箱（含垃圾邮件箱）。
-4. 再尝试断网或伪造错误 endpoint，确认失败提示正常显示。
-
----
-
-## 5. 图片来源说明
 本项目案例图使用 **项目内自制 SVG 占位图**（无外部下载图片、无第三方版权依赖），用于上线前展示版：
 - `assets/images/hardware-storage.svg`
 - `assets/images/beauty-product.svg`
 - `assets/images/home-appliance-3c.svg`
 - `assets/images/fashion-apparel.svg`
-- `assets/images/wechat-qr-placeholder.svg`（微信二维码占位图）
-
 > 说明：这些占位图可商用风险极低，适合作为初版上线素材。
 
 如需替换为真实照片，建议优先选择以下低版权风险方向（请在下载前再次核对授权条款）：
@@ -90,10 +58,6 @@ python -m http.server 8080 --directory docs
   - 家电 / 3C：`consumer electronics showcase`, `smart home appliance`, `electronics manufacturing`
   - 服装：`apparel manufacturing`, `fashion production line`, `clothing export showroom`
 - 素材风格建议：深色背景、工作室布光、简洁构图、偏商务展示感，保持四张案例图视觉统一。
-
----
-
-## 6. 后续如何替换文案和案例
 ### 替换公司文案
 - 编辑 `index.html` 中各区块文字（Hero / About / Services / Cases / Why Us / Contact）。
 
@@ -105,12 +69,6 @@ python -m http.server 8080 --directory docs
    - `home-appliance-3c.jpg`
    - `fashion-apparel.jpg`
 3. 在 `index.html` 中修改 `<img src="...">` 路径。
-
-### 替换微信二维码图片
-1. 将你的真实二维码图片放到：`docs/assets/images/wechat-qr.png`（建议路径）。
-2. 在 `docs/index.html` 中把 `wechat-qr-placeholder.svg` 改为 `wechat-qr.png`。
-3. 建议尺寸：`720x720` 或 `1024x1024`，保证扫码清晰。
-
 ### 替换品牌色与视觉风格
 - 编辑 `style.css` 顶部 `:root` 颜色变量（如 `--primary`、`--metal`、`--bg`）。
 
@@ -122,5 +80,4 @@ python -m http.server 8080 --directory docs
 ## 后续可替换项（建议）
 - 真实客户名称与更详细指标（需确认可公开范围）
 - 企业 LOGO、办公场景图、团队照片
-- 表单 endpoint（当前是 Formspree 占位地址，需替换为你自己的 endpoint）
 - 公司邮箱和微信（当前为演示占位，可替换成正式商务联系方式）
