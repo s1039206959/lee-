@@ -39,4 +39,3 @@ const observer = new IntersectionObserver(
 );
 
 revealItems.forEach((item) => observer.observe(item));
-counters.forEach((counter) => observer.observe(counter))

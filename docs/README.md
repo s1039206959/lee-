@@ -58,7 +58,6 @@ python -m http.server 8080 --directory docs
   - 家电 / 3C：`consumer electronics showcase`, `smart home appliance`, `electronics manufacturing`
   - 服装：`apparel manufacturing`, `fashion production line`, `clothing export showroom`
 - 素材风格建议：深色背景、工作室布光、简洁构图、偏商务展示感，保持四张案例图视觉统一。
----
 ### 替换公司文案
 - 编辑 `index.html` 中各区块文字（Hero / About / Services / Cases / Why Us / Contact）。
 
