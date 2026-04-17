@@ -1,7 +1,7 @@
-# NovaBridge Global 静态企业官网
+# 广州有喜传媒有限公司 静态企业官网
 
 ## 1. 项目简介
-这是一个可直接上线到 GitHub Pages 的纯静态企业官网项目，面向有出海需求的中国工厂、制造企业、品牌方和跨境卖家。
+这是一个可直接上线到 GitHub Pages 的纯静态企业官网项目，品牌定位为“企业出海跨境咨询与品牌营销服务商”，面向有出海需求的中国工厂、制造企业、品牌方和跨境卖家。
 
 核心展示内容：
 - 企业出海跨境咨询
@@ -55,6 +55,15 @@ python -m http.server 8080 --directory docs
 
 > 说明：这些占位图可商用风险极低，适合作为初版上线素材。
 
+如需替换为真实照片，建议优先选择以下低版权风险方向（请在下载前再次核对授权条款）：
+- 推荐素材平台方向：Unsplash、Pexels、Pixabay（优先选择可商用、可修改、无需署名或按要求署名的素材）。
+- 建议搜索关键词（中英组合）：
+  - 五金收纳：`warehouse metal storage`, `industrial organizer`, `factory hardware shelf`
+  - 美妆产品：`cosmetic product flat lay`, `beauty packaging studio`, `skincare product display`
+  - 家电 / 3C：`consumer electronics showcase`, `smart home appliance`, `electronics manufacturing`
+  - 服装：`apparel manufacturing`, `fashion production line`, `clothing export showroom`
+- 素材风格建议：深色背景、工作室布光、简洁构图、偏商务展示感，保持四张案例图视觉统一。
+
 ---
 
 ## 5. 后续如何替换文案和案例
@@ -82,3 +91,4 @@ python -m http.server 8080 --directory docs
 - 真实客户名称与更详细指标（需确认可公开范围）
 - 企业 LOGO、办公场景图、团队照片
 - 表单提交方式（当前使用 `mailto:`，可后续改为第三方表单服务）
+- 公司邮箱和微信（当前为演示占位，可替换成正式商务联系方式）
