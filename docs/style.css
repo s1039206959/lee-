@@ -1,13 +1,10 @@
 :root {
-  --bg: #070d15;
-  --surface: #0d1827;
-  --card: #101f32;
+
   --text: #e9eff8;
   --muted: #b5c3d6;
   --line: rgba(255, 255, 255, 0.12);
   --primary: #73a8ff;
   --metal: #d6c39a;
-  --radius: 16px;
 }
 
 * { box-sizing: border-box; }
@@ -15,14 +12,12 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   font-family: Inter, "Noto Sans SC", system-ui, sans-serif;
-  background: linear-gradient(180deg, #060b12, #081321 40%, #050a12);
   color: var(--text);
   line-height: 1.65;
 }
 
 .container { width: min(1140px, 92vw); margin: 0 auto; }
 .section { padding: 84px 0; }
-.section-dark { background: rgba(255,255,255,0.02); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .kicker { color: var(--metal); letter-spacing: .09em; font-size: .78rem; margin: 0 0 12px; }
 h1, h2, h3, p { margin-top: 0; }
 
@@ -73,7 +68,6 @@ h1, h2, h3, p { margin-top: 0; }
 }
 
 .hero { padding: 76px 0 64px; }
-.hero-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 28px; align-items: center; }
 .hero h1 {
   font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1.2;
@@ -91,8 +85,6 @@ h1, h2, h3, p { margin-top: 0; }
 }
 .btn-primary { background: linear-gradient(130deg, var(--primary), #5f7dff); color: #fff; }
 .btn-ghost { border-color: var(--line); color: #fff; background: transparent; }
-.btn:hover { transform: translateY(-1px); }
-
 .stats {
   list-style: none;
   padding: 0;
@@ -147,11 +139,6 @@ h1, h2, h3, p { margin-top: 0; }
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
-.case-card {
-  background: rgba(255,255,255,.02);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  overflow: hidden;
 }
 .case-card img {
   width: 100%;
@@ -179,14 +166,13 @@ h1, h2, h3, p { margin-top: 0; }
   grid-template-columns: 1fr 1fr;
   gap: 22px;
 }
-.contact-info p { margin-bottom: 8px; color: var(--muted); }
+> main
 .form {
   display: grid;
   gap: 12px;
   padding: 20px;
   border-radius: var(--radius);
   border: 1px solid var(--line);
-  background: rgba(255,255,255,.02);
 }
 .form label {
   display: grid;

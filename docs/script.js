@@ -11,7 +11,6 @@ nav?.querySelectorAll('a').forEach((item) => {
 
 const counters = document.querySelectorAll('[data-target]');
 const revealItems = document.querySelectorAll('.reveal');
-
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -40,4 +39,4 @@ const observer = new IntersectionObserver(
 );
 
 revealItems.forEach((item) => observer.observe(item));
-counters.forEach((counter) => observer.observe(counter));
+counters.forEach((counter) => observer.observe(counter))

@@ -43,16 +43,11 @@ python -m http.server 8080 --directory docs
 
 ### 方式二
 将 `docs/` 目录内容发布到 `gh-pages` 分支根目录。
-
----
-
-## 4. 图片来源说明
 本项目案例图使用 **项目内自制 SVG 占位图**（无外部下载图片、无第三方版权依赖），用于上线前展示版：
 - `assets/images/hardware-storage.svg`
 - `assets/images/beauty-product.svg`
 - `assets/images/home-appliance-3c.svg`
 - `assets/images/fashion-apparel.svg`
-
 > 说明：这些占位图可商用风险极低，适合作为初版上线素材。
 
 如需替换为真实照片，建议优先选择以下低版权风险方向（请在下载前再次核对授权条款）：
@@ -63,10 +58,7 @@ python -m http.server 8080 --directory docs
   - 家电 / 3C：`consumer electronics showcase`, `smart home appliance`, `electronics manufacturing`
   - 服装：`apparel manufacturing`, `fashion production line`, `clothing export showroom`
 - 素材风格建议：深色背景、工作室布光、简洁构图、偏商务展示感，保持四张案例图视觉统一。
-
 ---
-
-## 5. 后续如何替换文案和案例
 ### 替换公司文案
 - 编辑 `index.html` 中各区块文字（Hero / About / Services / Cases / Why Us / Contact）。
 
@@ -78,7 +70,6 @@ python -m http.server 8080 --directory docs
    - `home-appliance-3c.jpg`
    - `fashion-apparel.jpg`
 3. 在 `index.html` 中修改 `<img src="...">` 路径。
-
 ### 替换品牌色与视觉风格
 - 编辑 `style.css` 顶部 `:root` 颜色变量（如 `--primary`、`--metal`、`--bg`）。
 
@@ -90,5 +81,4 @@ python -m http.server 8080 --directory docs
 ## 后续可替换项（建议）
 - 真实客户名称与更详细指标（需确认可公开范围）
 - 企业 LOGO、办公场景图、团队照片
-- 表单提交方式（当前使用 `mailto:`，可后续改为第三方表单服务）
 - 公司邮箱和微信（当前为演示占位，可替换成正式商务联系方式）
