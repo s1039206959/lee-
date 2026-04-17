@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" role="img" aria-label="微信二维码占位图">
+  <rect width="720" height="720" fill="#0e1727"/>
+  <rect x="70" y="70" width="580" height="580" fill="#f4f8ff" rx="18"/>
+  <g fill="#0e1727">
+    <rect x="110" y="110" width="120" height="120"/>
+    <rect x="490" y="110" width="120" height="120"/>
+    <rect x="110" y="490" width="120" height="120"/>
+    <rect x="280" y="280" width="30" height="30"/>
+    <rect x="320" y="280" width="30" height="30"/>
+    <rect x="360" y="280" width="30" height="30"/>
+    <rect x="320" y="320" width="30" height="30"/>
+    <rect x="400" y="320" width="30" height="30"/>
+    <rect x="440" y="320" width="30" height="30"/>
+    <rect x="280" y="360" width="30" height="30"/>
+    <rect x="360" y="360" width="30" height="30"/>
+    <rect x="440" y="360" width="30" height="30"/>
+    <rect x="280" y="400" width="30" height="30"/>
+    <rect x="320" y="440" width="30" height="30"/>
+    <rect x="360" y="440" width="30" height="30"/>
+    <rect x="400" y="440" width="30" height="30"/>
+  </g>
+  <text x="360" y="680" text-anchor="middle" fill="#cdd8ea" font-size="30" font-family="Inter,Arial,sans-serif">微信二维码占位图（可替换）</text>
+</svg>
